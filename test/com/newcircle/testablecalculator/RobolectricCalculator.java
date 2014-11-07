@@ -49,7 +49,7 @@ public class RobolectricCalculator extends BaseTest {
 	public void sanityTest()  throws Exception
 	{
 		String  appName = mAUT.getString(R.string.app_name);
-		assertThat(appName, equalTo("NewCalculator"));
+		assertThat(appName, equalTo("TestableCalculator"));
 	}
 	
 	@Test
