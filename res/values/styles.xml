@@ -1,0 +1,68 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <dimen name="btn_digit_text_size">40sp</dimen>
+    <dimen name="btn_operation_text_size">40sp</dimen>
+    <dimen name="btn_function_text_size">30sp</dimen>
+    <dimen name="btn_clear_text_size">30sp</dimen>
+    <dimen name="display_text_size">30sp</dimen>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="baseButton">
+        <item name="android:layout_margin">2sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="topButton" parent="baseButton"></style>    
+
+    <style name="editButton" parent="@style/baseButton">
+        <item name="android:background">@drawable/number_box</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+       <style name="editButtonBorder" parent="@style/baseButton">
+        <item name="android:background">@drawable/orange_border</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+     
+    <style name="button_style">
+        <item name="android:textSize">40sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/btn_function</item>
+        <item name="android:layout_margin">1sp</item>
+    </style>
+
+    <style name="digit_button_style" parent="button_style">
+        <item name="android:background">@drawable/btn_digit</item>
+    </style>
+
+    <style name="op_button_style" parent="button_style">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="button_small_style" parent="button_style">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+</resources>

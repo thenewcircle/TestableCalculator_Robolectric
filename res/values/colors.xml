@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="editSelectedTrue">#4C2E00</color>
+    <color name="editSelectedFalse">#000000</color>    
+    <color name="newCircleBG">#1C1C3E</color>
+</resources>
